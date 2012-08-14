@@ -8,7 +8,6 @@ DEFINE_string(thread_num, 5, "max thread number");
 DEFINE_string(transfer_yrns, "monitor/backend/transfer",
               "transfer's yrns path in zookeeper");
 
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -72,4 +71,3 @@ void TaskScheduler::Run() {
 }
 } // namespace monitor
 } // namespace client
-} // namespace infra

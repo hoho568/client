@@ -18,7 +18,6 @@
 #include "util/command_executor/command_executor.h"
 #include "infrastructure/client/modules/monitor/proto/gen-cpp/monitor_types.h"
 
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -72,6 +71,4 @@ class TaskComparator {
 
 } // namespace monitor
 } // namespace client
-} // namespace infra
-
 #endif // INFRASTRUCTURE_CLIENT_MODULES_MONITOR_SCHEDULER_TASK_H

@@ -6,7 +6,7 @@
 
 DEFINE_string(monitor_db, "",
              "housekeeper's monitor informations in db");
-namespace infra {
+
 namespace client {
 namespace monitor {
 
@@ -47,6 +47,5 @@ void MonitorModule::Run() {
     }
 }
 
-}
-}
-}
+} // namespace monitor
+} // namespace client

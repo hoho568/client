@@ -1,8 +1,8 @@
 // Copyright 2011 Yunrang Inc. All Rights Reserved.
 // Author: guoqingao@yunrang.com (Guoqing Ao)
 
-#ifndef INFRASTRUCTURE_CLIENT_MODULES_MONITOR_SCHEDULER_MONITOR_CLIENT_H_
-#define INFRASTRUCTURE_CLIENT_MODULES_MONITOR_SCHEDULER_MONITOR_CLIENT_H_
+#ifndef INFRASTRUCTURE_CLIENT_MODULES_MONITOR_MONITOR_CLIENT_H_
+#define INFRASTRUCTURE_CLIENT_MODULES_MONITOR__MONITOR_CLIENT_H_
 
 #include <string>
 
@@ -18,7 +18,6 @@ namespace base {
 template <typename service> class ThriftClient;
 }
 
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -42,7 +41,5 @@ class MonitorClient {
 };
 } // namespace monitor
 } // namespace client
-} // namespace infra
-
-#endif // INFRASTRUCTURE_MONITOR_SCHEDULER_MONITOR_CLIENT_H_
+#endif // INFRASTRUCTURE_CLIENT_MODULES_MONITOR_CLIENT_H_
 

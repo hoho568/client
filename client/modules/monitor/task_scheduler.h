@@ -20,7 +20,6 @@
 #include "infrastructure/client/modules/monitor/scheduler/task.h"
 #include "infrastructure/client/modules/monitor/scheduler/monitor_client.h"
 
-namespace infra {
 namespace client {
 namespace monitor {
     
@@ -42,7 +41,7 @@ class TaskScheduler {
       std::string server_name_;
       int server_port_;
 };
+
 }  // namespace monitor
 }  // namespace client
-}  // namespace infra
 #endif // INFRASTRUCTURE_CLIENT_MODULES_MONITOR_TASK_SCHEDULER_H_

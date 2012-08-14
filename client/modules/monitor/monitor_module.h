@@ -1,6 +1,9 @@
 // Copyright 2012 Jike Inc. All Rights Reserved.
 // Author: duniandong@jike.com (Du Niandong)
 
+#ifndef INFRASTRUCTURE_CLIENT_MODULES_MONITOR_MONITOR_MODULE_H_
+#define INFRASTRUCTURE_CLIENT_MODULES_MONITOR_MONITOR_MODULE_H_
+
 #include <utility>
 #include <string>
 #include <vector>
@@ -12,9 +15,6 @@
 #include "infrastructure/client/moudles/monitor/task_scheduler.h"
 #include "infrastructure/client/modules/monitor/monitor_client.h"
 
-
-
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -34,5 +34,5 @@ class MonitorModule : public base::Thread {
 };
 
 } // namespace monitor
-} // namespace client
-} // namespace infra
+} // naemspace client
+#endif // INFRASTRUCTURE_CLIENT_MODULES_MONITOR_MONITOR_MODULE_H_

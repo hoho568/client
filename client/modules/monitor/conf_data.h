@@ -14,7 +14,6 @@
 #include "infrastructure/client/modules/monitor/task.h"
 #include "infrastructure/client/modules/monitor/task_scheduler.h"
 
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -40,5 +39,4 @@ class ConfData {
 };
 } // namespace monitor
 } // namespace client
-} // namespace infra
 #endif INFRASTRUCTURE_CLIENT_MODULES_MONITOR_CONF_DATA_H_

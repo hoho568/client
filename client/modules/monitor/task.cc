@@ -6,7 +6,6 @@
 
 #define SECOND_TO_MS(second) ((second) * 1000)
 
-namespace infra{
 namespace client {
 namespace monitor {
 
@@ -98,4 +97,3 @@ void Task::SetService(const string &service) {
 
 } // namespace monitor
 } // namespace client
-} // namespace infra

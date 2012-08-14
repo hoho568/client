@@ -4,7 +4,6 @@
 #include "base/yr.h"
 #include "infrastructure/client/modules/monitor/conf-data.h"
 
-namespace infra {
 namespace client {
 namespace monitor {
 
@@ -23,14 +22,12 @@ void ConfData::UpdateService(const vector<ServiceEntry> &entry) {
     pair<ServiceEntryMap::iterator, bool> service_ret;
     for (int i = 0; i < entry.size(); ++i) {
         Task task(entry[i]);
-
         mutex_for_check_entry_cache_.ReaderLock();
         service_entry_it = check_entry_woking_cache_->find(task.GetService());
         if (service_entry_id == check_entry_working_cache_->end()) {
             task.SetRecurring(false);
         }
         mutex_for_check_entry_cache_.Readerunlock();
-
         service_entry_it = check_entry_bak_cache_->find(task.GetService());
         if (service_entry_it == check_entry_bak_cache_->end()) {
             VLOG(2) << "insert new task into bak cache: "
@@ -91,5 +88,4 @@ bool ConfData::FindInWorkingCache(Task *task) {
 }
 } // namespace monitor
 } // namespace client
-} // namespace infra
 
